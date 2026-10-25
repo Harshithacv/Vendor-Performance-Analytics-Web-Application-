@@ -23,9 +23,9 @@ const navItems = [
 
 const Sidebar = () => {
   return (
-    <aside className="w-64 bg-white border-r border-slate-200 hidden md:flex flex-col flex-shrink-0 min-h-[calc(100vh-4rem)]">
+    <aside className="w-64 bg-white dark:bg-[#111827] border-r border-slate-200 dark:border-[#293548] hidden md:flex flex-col flex-shrink-0 min-h-[calc(100vh-4rem)] transition-colors duration-200">
       <div className="p-4">
-        <p className="px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+        <p className="px-3 text-xs font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-2">
           Navigation Modules
         </p>
         <nav className="space-y-1">
@@ -39,8 +39,8 @@ const Sidebar = () => {
                 className={({ isActive }) =>
                   `flex items-center space-x-3 px-3 py-2.5 rounded-lg text-sm font-medium transition ${
                     isActive
-                      ? 'bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100/60 font-semibold'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                      ? 'bg-indigo-50 text-indigo-700 dark:bg-blue-500/10 dark:text-blue-400 dark:border-blue-500/30 shadow-xs border border-indigo-100/60 font-semibold'
+                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50 dark:text-slate-400 dark:hover:text-[#F1F5F9] dark:hover:bg-[#172033]'
                   }`
                 }
               >
@@ -52,13 +52,13 @@ const Sidebar = () => {
         </nav>
       </div>
 
-      <div className="mt-auto p-4 border-t border-slate-200">
-        <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3 text-xs">
-          <div className="flex items-center space-x-2 text-slate-700 font-semibold mb-1">
-            <Award className="w-4 h-4 text-amber-500" />
+      <div className="mt-auto p-4 border-t border-slate-200 dark:border-[#293548]">
+        <div className="bg-slate-50 dark:bg-[#172033] border border-slate-200/80 dark:border-[#293548] rounded-xl p-3 text-xs transition-colors">
+          <div className="flex items-center space-x-2 text-slate-700 dark:text-slate-200 font-semibold mb-1">
+            <Award className="w-4 h-4 text-amber-500 dark:text-amber-400" />
             <span>CVPI Scoring Engine</span>
           </div>
-          <p className="text-slate-500 text-[11px] leading-relaxed">
+          <p className="text-slate-500 dark:text-slate-400 text-[11px] leading-relaxed">
             Standardized composite index ranking across delivery SLA, commercial margins, and stock velocity.
           </p>
         </div>
@@ -68,3 +68,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
