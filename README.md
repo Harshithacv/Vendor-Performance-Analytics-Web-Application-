@@ -140,3 +140,7 @@ npx vitest run
 | Vendor Comparison | Complete | 5-axis Radar chart, Head-to-head table, 95% CI margins, insights |
 | Data Upload & Validation | Complete | 2-step drag-and-drop workflow, duplicate detection, cleaning pipeline |
 | Filtered Reports Export | Complete | Real-time CSV generation matching active filters |
+
+
+## 8. Vendor Performance Analytics Web Application
+https://vpa-web-application..studioai
