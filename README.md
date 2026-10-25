@@ -143,4 +143,4 @@ npx vitest run
 
 
 ## 8. Vendor Performance Analytics Web Application
-https://vpa-web-application..studioai
+https://vpa-web-application.ai.studio
